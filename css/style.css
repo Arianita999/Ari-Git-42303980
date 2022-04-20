@@ -28,16 +28,11 @@ section:nth-child(even){
     background:rgb(255, 255, 255);
 }
 
-.heading{
-    text-align: center;
-    color: black;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-    text-transform: uppercase;
-}
+
   
 /* BOTON CON ANIMACION */
-.btn{
+.btn-btn
+{
     color: #fcb900;
   border: 3px solid #fcb900;
   background-image: linear-gradient(to right, transparent 50%, #fcb900 50%);
@@ -46,10 +41,9 @@ section:nth-child(even){
   padding:.8rem 3rem;
   font-size: 1.7rem;
   display: inline-block;
-    
 }
 
-.btn:hover{
+.btn-btn:hover{
     color: #FFF;
   background-position: 100%;
 
@@ -57,23 +51,19 @@ section:nth-child(even){
 
 
 
-
-header{
-    position: fixed;
-    top:0; left: 0; right:0;
-    background: rgb(0, 0, 0);
-    padding:1rem 7%;
-    display: inline-block;
-    align-items: center;
+nav{
+    background-color: black;
     justify-content: space-between;
-    z-index: 1000;
-    display: flex;
-    box-shadow: var(--box-shadow);
+    font-size: x-large;
+    align-items: center;
+    
 }
-/*COLOR AL ELEMENTO 1 DEL LOGO */
+
+/* logo */
+
 header .logo{
     color: rgb(255, 255, 255);
-    font-size: 2.5rem;
+    font-size: large;
     width: 50px;
     height: 50px;
 }
@@ -81,6 +71,7 @@ header .logo{
 
 .h3index
 {
+    margin-left:5rem;
     background: linear-gradient(90deg, #D9BC9A, #8C3C1F, #592316, #BF5F56, #4E3026, #0D0D0D);
     background-size: 200%;
     font-size: 40px;
@@ -129,20 +120,25 @@ header .logo{
     }
 }
 
-
-
-/*COLOR AL ELEMENTO 2 DEL LOGO */
-/*TAMAÑO EN EL NAVBAR */
-header .navbar a{
-    font-size: 1.7rem;
-    padding:.5rem 1.5rem;
-   color: #fff;
+header .navbar-toggler
+{
+    color: white;
+    border: white 1px solid;
 }
 
-/*COLOR QUE LE DAMOS CUANDO APRETAMOS */
-header .navbar a.active,
-header .navbar a:hover{
-    color:#5c4507;
+/*COLOR AL ELEMENTO 2 DEL LOGO*/
+/*TAMAÑO EN EL NAVBAR*/
+
+header .navbar .nav-link{
+    font-size: 1.7rem;
+   color: rgb(255, 255, 255);
+   justify-content: space-between;
+}
+
+/*COLOR QUE LE DAMOS CUANDO APRETAMOS*/
+header .navbar .nav-link.active,
+header .navbar .nav-link:hover{
+    color:#000000;
     background-color: #fcb900;
 }
 
@@ -152,8 +148,6 @@ header .navbar a:hover{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem; 
-    padding-top: 9rem;
 }
 
 .home .home-slider .slide .contentindex{
@@ -177,26 +171,11 @@ header .navbar a:hover{
     line-height: 1.5;
 }
 
-
-@media(max-width:795px)
-{
-    header
-{
-  align-items: center;
-  flex-direction: column;
+header .icons .menu-bars{
+    display: none;
 }
 
-.navbar a
-{
-    display: block;
-}
 
-.home
-{
-    margin-top: 17rem;
-}
-
-} 
 
 /* Footer */
 
@@ -371,100 +350,29 @@ footer .containerfoot .sec p
 
 /* contacto fomulario */
 
-.bodycontacto
+
+.containerform
 {
-    font-family: Arial; 
-    background: #000000; 
-    box-sizing: border-box;
+    border: 2px solid #000000;
+    padding: 5rem;
 }
+
 
 .h1form
 {
     color: #000;
     text-align: center;
-    padding-top: 6rem;
     font-size: 50px;
 }
-.myForm {
-    display: grid;
-    grid-template-areas: 
-      "contact comments"
-      "... button";
-  	grid-template-rows: 12em 2em;  
-  	grid-template-columns: 12em 1fr;
-    grid-gap: .8em;
-    background: rgb(197, 197, 197);
-    border: black 1px solid;
-    padding: 9rem;
-    font-size: 20px;
-  }
-  .myForm label  {
-    grid-area: labels;
-  }
-  .myForm input {
-    grid-area: contact;
-   	width: 100%;
-    padding: 1.1em;
-    border: none;
-    margin-bottom: 1em;
-  }
-  .myForm textarea {
-   min-height: calc(100% - 2em);
-   width: 100%;
-   border: none;
-  }
-  #contact-details {
-   grid-area: contact;
-  }
-  #comment-box {
-   grid-area: comments;
-  }
-  .myForm button {
-    grid-area: button;
-    border: 0;
-    background: rgb(0, 0, 0);
-    color: white;
-  }
 
-  .myForm button:hover
-  {
-    background-color: #fcb900;
-  }
-
-  @media(max-width: 795px)
-  {
-
-    .h1form
-{
-    text-align: center;
-    padding-top: 30rem;
-    font-size: 50px;
-}
-      .myForm
-      {
-          padding: 40px;
-      }
-  
-      .myForm
-      {
-         grid-template-columns: repeat(2,1fr);
-      }
-  }
-  
-  @media(max-width:768px)
-  {
-      .myForm
-      {
-         grid-template-columns: repeat(2,1fr);
-      }
-  }
 
 /* UBICACION */
 .h1ubi
 {
-    padding-top: 10rem;
-    font-size: 4rem;
-    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6rem;
+    text-align: center; 
+    padding-bottom: 20px;
 }
 
 .ubicacion
@@ -487,9 +395,10 @@ footer .containerfoot .sec p
 /* VIDEOS */
 .h1videos
 {
-    padding-top: 10rem;
-    font-size: 4rem;
-    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6rem;
+    text-align: center; 
+    padding-bottom: 20px;
 }
 
 .videos
@@ -511,118 +420,38 @@ footer .containerfoot .sec p
 
   /* GALERIA */
 
+.row
+{
+    padding-bottom: 50px;
+}
+
 .h1lomitos
 {
-    padding-top: 10rem;
-    font-size: 4rem;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6rem;
     text-align: center; 
+    padding-bottom: 20px;
 }
 
-.container{
-    display:grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows:100px 300px;
-    grid-gap:10px;
-    grid-auto-flow: dense;
-}
-
-.gallery-item{
-    width:100%;
-    height:100%;
-    position:relative;
-}
-
-.gallery-item .image{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
-
-.gallery-item .image img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    object-position:50% 50%;
-    cursor:pointer;
-    transition:.5s ease-in-out;
-}
-.gallery-item:hover .image img{
-    transform:scale(1.5);
-}
-
-.gallery-item .text{
-    opacity:0;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    color:#fff;
-    font-size:25px;
-    pointer-events:none;
-    z-index:4;
-    transition: .3s ease-in-out;
-    -webkit-backdrop-filter: blur(5px) saturate(1.8);
-    backdrop-filter: blur(5px) saturate(1.8);
-}
-
-.w-1{
-    grid-column: span 1;
-}
-.w-2{
-    grid-column: span 2;
-}
-.w-3{
-    grid-column: span 3;
-}
-.w-4{
-    grid-column: span 4;
-}
-.w-5{
-    grid-column: span 5;
-}
-.w-6{
-    grid-column: span 6;
-}
-
-.h-1{
-    grid-row: span 1;
-}
-.h-2{
-    grid-row: span 2;
-}
-.h-3{
-    grid-row: span 3;
-}
-.h-4{
-    grid-row: span 4;
-}
-.h-5{
-    grid-row: span 5;
-}
-.h-6{
-    grid-row: span 6;
-}
-
-
-@media (max-width:795px){    
-    .h1lomitos
+.card
 {
-    padding-top: 30rem;
-    font-size: 4rem;
-    text-align: center; 
-}
-    
-    .container
-    {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6
-    {
-        grid-column:span 1;
-    }
-    
-
+    width:400px
 }
 
+.card-title
+{
+    background: black;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Arvo';
+    letter-spacing: 2px;
+}
 
+.card-text
+{
+    font-size: 15px;
+    color: black;
+}
   
