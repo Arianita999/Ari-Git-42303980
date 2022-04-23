@@ -175,6 +175,11 @@ header .icons .menu-bars{
     display: none;
 }
 
+.imgindex
+{
+    width: 100%;
+}
+
 
 
 /* Footer */
@@ -357,12 +362,18 @@ footer .containerfoot .sec p
     padding: 5rem;
 }
 
+label
+{
+    font-size: 20px;
+}
+
 
 .h1form
 {
-    color: #000;
-    text-align: center;
-    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 6rem;
+    text-align: center; 
+    padding-bottom: 20px;
 }
 
 
@@ -385,7 +396,6 @@ footer .containerfoot .sec p
 {
     .h1ubi
 {
-    padding-top: 30rem;
     font-size: 4rem;
     text-align: center;
 }
@@ -420,11 +430,10 @@ footer .containerfoot .sec p
 
   /* GALERIA */
 
-.row
+.col-sm-6
 {
-    padding-bottom: 50px;
+    padding-bottom: 3rem;
 }
-
 .h1lomitos
 {
     font-family: 'Alfa Slab One', cursive;
@@ -433,9 +442,30 @@ footer .containerfoot .sec p
     padding-bottom: 20px;
 }
 
+.h3cards
+{
+    font-weight: 900;
+}
+
+.h2cards
+{
+    color: rgb(255, 255, 255);
+    background: black;
+    padding: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+font-family: 'Arvo', serif;
+font-size: 30px;
+}
+
+.imglogo
+{
+    width: 100%;
+    text-align: center;
+}
+
 .card
 {
-    width:400px
+    width:100%;
 }
 
 .card-title
